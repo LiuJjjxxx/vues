@@ -1,22 +1,31 @@
 <template>
     <div class="Tabbar">
         <mt-tabbar v-model="selected">
-            <mt-tab-item id="tab1">
-                <img slot="icon" src="">
-                tab1
-            </mt-tab-item>
-            <mt-tab-item id="tab2">
-                <img slot="icon" src="">
-                tab2
-            </mt-tab-item>
-            <mt-tab-item id="tab3">
-                <img slot="icon" src="">
-                tab3
-            </mt-tab-item>
-            <mt-tab-item id="tab4">
-                <img slot="icon" src="">
-                tab4
-            </mt-tab-item>
+            <router-link to="/home" class="button">
+                <mt-tab-item id="tab1" >
+                    <img slot="icon" src="../assets/icon/yinhang.png">
+                    首页
+                </mt-tab-item>
+            </router-link>
+            <router-link to="/member" class="button">
+                <mt-tab-item id="tab2" >
+                    <img slot="icon" src="../assets/icon/yonghu.png">
+                    会员
+                </mt-tab-item>
+            </router-link>
+            <router-link to="/shopcar" class="button">
+                <mt-tab-item id="tab3">
+                    <img slot="icon" src="../assets/icon/gouwuche.png">
+                    购物车
+                <span>1</span>
+                </mt-tab-item>
+            </router-link>
+            <router-link to="/serch" class="button">
+                <mt-tab-item id="tab4" >
+                    <img slot="icon" src="../assets/icon/shezhi.png">
+                    搜索
+                </mt-tab-item>
+            </router-link>
         </mt-tabbar>
 
     </div>
@@ -27,7 +36,11 @@ export default {
 }
 </script>
 <style scoped>
-
-</style>>
-
+ .button{
+     flex: 4;
+     text-decoration:none;
+    }
+.router-link-active{
+    color: black;
+    }
 </style>
