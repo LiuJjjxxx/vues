@@ -4,6 +4,7 @@ import Home from '@/components/Tabbar/Home'
 import Member from '@/components/Tabbar/Member'
 import Shopbar from '@/components/Tabbar/Shopbar'
 import Search from '@/components/Tabbar/Search'
+import NewsList from '@/components/news/NewsList'
 
 Vue.use(Router)
 
@@ -14,6 +15,8 @@ export default new Router({
     {path:'/member',component:Member},
     {path:'/shopcar',component:Shopbar},
     {path:'/serch',component:Search},
+    {path:'/home/newlist',component:NewsList},
+
 
   ]
 })
