@@ -27,7 +27,6 @@
                 </mt-tab-item>
             </router-link>
         </mt-tabbar>
-
     </div>
 </template>
 <script>
