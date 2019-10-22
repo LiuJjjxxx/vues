@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --open --port 1111 --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "rund": "node build/dev-server.js"
   },
   "dependencies": {
     "mint-ui": "^2.2.13",
